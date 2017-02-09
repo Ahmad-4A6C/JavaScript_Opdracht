@@ -24,7 +24,7 @@ function functie1() {
     document.getElementById("resultaat").innerHTML += "- Het cijfer is " + cijfer + " en is dus "+ numbers+"<br>";  
 }
 function functie2() {
-    var cijfer = document.getElementById("cijfer1").value;
+    var cijfer = document.getElementById("cijfer2").value;
     
     var numbers = cijfers(cijfer);
             
