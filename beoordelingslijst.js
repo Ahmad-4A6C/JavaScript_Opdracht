@@ -1,5 +1,9 @@
 function cijfers(nummer) {
-            if (nummer > 0 && nummer <50){
+    
+            if (nummer <0 || nummer > 100) {
+                return "cijfer verkeerd geschreven .Type je cijfer opnieuwe in"
+            } else {
+            if (nummer >= 0 && nummer <50){
                 return "onvoldoende"
             }else{
                 if(nummer >=50 && nummer <60) {
@@ -10,8 +14,8 @@ function cijfers(nummer) {
                     } else if (nummer >=75 && nummer <101) {
                        return "goed"
                     }
-                    
                 }
+              }
             }
         }
 
@@ -28,6 +32,6 @@ function functie2() {
     
     var numbers = cijfers(cijfer);
             
-    document.getElementById("resultaat").innerHTML += "- De beoordeling is "+ numbers + ", want het cijfer is "+cijfer+"<br>"; 
+    document.getElementById("resultaat").innerHTML += "- De beoordeling is: "+ numbers + ", want het cijfer is "+cijfer+"<br>"; 
 }
 
